@@ -2,7 +2,7 @@
 
 Image intended to be used with the Remote feature of Visual Studio Code. It provides an environment with stack and hie already installed for ghc-8.6.5, and an unprivileged user with UID 1000.
 
-_NOTE_: It is important to run the image with as a user with the same UID as the user in you are currently using (for POSIX systems at least) otherwise newly create files from within the container will be created with a different UID (usually root if no configuration is provided).
+**NOTE**: It is important that the user running in the container has the same UID as the one you are currently using in the host OS (for POSIX systems at least) otherwise newly create files from within the container will be created with a different UID (usually root if no configuration is provided).
 
 # Instructions
 
